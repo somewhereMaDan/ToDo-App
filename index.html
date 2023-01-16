@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <title>To Do</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+  <div class="background">
+  <p>What do you want to add: </p> <input id="todo-title" type="text" placeholder="Enter a task">
+  <p>And when do you want to add: </p> <input id="date-picker" type="datetime-local">
+  <button id="add-btn" onclick="add_todo()">Add</button>
+
+  
+    <section class="mid">
+
+      <div class="onHand">
+
+        <h1>Task on Hand </h1>
+        <div id="on-hand"> </div>
+
+      </div>
+
+      <div class="completedTask">
+
+        <h1>Completed Tasks</h1>
+        <div id="completed-task"> </div>
+
+    </section>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
